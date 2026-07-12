@@ -1,9 +1,9 @@
 /* ══════════════════════════════════════════════════════════════════════
-   AZUL CAFFÈ & BRUNCH'S — script.js
-   - Traductions PT / EN / FR (PT par défaut) + mémorisation en localStorage
-   - Rendu du menu par catégories avec onglets
-   - Menu burger mobile, apparition au défilement, horaires du jour
-   - Secours automatique si une image externe ne charge pas
+   AZUL CAFFÈ & BRUNCH'S · script.js
+   · Traductions PT / EN / FR (PT par défaut) + mémorisation en localStorage
+   · Rendu du menu par catégories avec onglets
+   · Menu burger mobile, apparition au défilement, horaires du jour
+   · Secours automatique si une image externe ne charge pas
    ══════════════════════════════════════════════════════════════════════ */
 
 (function () {
@@ -34,8 +34,8 @@
       "hero.rating": "5,0 no Google · 31 avaliações",
 
       "quick.todayLabel": "Hoje",
-      "quick.closed": "Fechado — voltamos terça às 9:00",
-      "quick.open": "9:00 – 22:00",
+      "quick.closed": "Fechado, reabrimos terça às 9:00",
+      "quick.open": "das 9:00 às 22:00",
       "quick.halalLabel": "100% halal",
       "quick.halalSub": "Cozinha caseira",
       "quick.reviews": "31 avaliações",
@@ -43,23 +43,23 @@
       "story.eyebrow": "A nossa história",
       "story.title": "Um pedaço da Argélia no Bairro Azul",
       "story.p1": "O Azul nasceu de uma ideia simples: cozinhar em Lisboa como se cozinha em casa, na Argélia. Sem pressa, com boas receitas de família e a porta sempre aberta.",
-      "story.p2": "Aqui encontra o couscous que junta toda a gente à sexta-feira, doces orientais feitos por nós, mas também crepes, omeletes e quiches acabados de fazer. A alma é argelina; a mesa é generosa e para todos.",
+      "story.p2": "Aqui encontra o couscous que junta toda a gente à sexta, doces orientais feitos por nós e também crepes, omeletes e quiches acabados de fazer. A alma é argelina e a mesa é generosa, para todos.",
       "story.p3": "Estamos a dois passos do metro São Sebastião e do El Corte Inglés, com uma esplanada tranquila para os dias de sol. Tudo o que servimos é halal.",
 
-      "couscous.eyebrow": "Só à sexta-feira",
+      "couscous.eyebrow": "Só à sexta",
       "couscous.title": "O ritual do couscous de sexta",
-      "couscous.p1": "Na Argélia, a sexta-feira é dia de couscous — o dia em que a família se junta à volta de um prato só. No Azul mantemos esse ritual, aqui em Lisboa.",
-      "couscous.p2": "Todas as sextas, a sêmola é trabalhada à mão de manhã, os legumes cozem devagar e o caldo perfuma a casa inteira. Quando acaba, acabou — por isso o melhor é chegar cedo.",
+      "couscous.p1": "Na Argélia, a sexta é o dia do couscous, o dia em que a família se junta à volta de um prato só. No Azul mantemos esse ritual, aqui em Lisboa.",
+      "couscous.p2": "Todas as sextas a sêmola é trabalhada à mão de manhã, os legumes cozem devagar e o caldo perfuma a casa inteira. Quando acaba, acabou, por isso o melhor é chegar cedo.",
       "couscous.li1": "Receita de família, feita de raiz todas as sextas",
-      "couscous.li2": "Quantidades limitadas — enquanto durar",
+      "couscous.li2": "Quantidades limitadas, enquanto durar",
       "couscous.li3": "100% halal, como tudo na nossa cozinha",
       "couscous.cta": "Reservar a minha sexta",
 
       "menu.eyebrow": "O menu",
       "menu.title": "Caseiro, generoso, halal",
-      "menu.intro": "A alma da casa é argelina — o couscous, os doces orientais — e a mesa é variada: crepes, omeletes, quiches e bons cafés, tudo feito por nós.",
-      "menu.sigFridayBadge": "Sexta-feira",
-      "menu.sigCouscous": "Couscous de sexta-feira",
+      "menu.intro": "A alma da casa é argelina, o couscous e os doces orientais, e a mesa é variada: crepes, omeletes, quiches e bons cafés, tudo feito por nós.",
+      "menu.sigFridayBadge": "Sexta",
+      "menu.sigCouscous": "Couscous de sexta",
       "menu.sigCouscousDesc": "O nosso prato especial, feito de raiz todas as sextas. Enquanto durar.",
       "menu.sigDailyBadge": "Todos os dias",
       "menu.sigPastries": "Doces orientais",
@@ -68,9 +68,9 @@
 
       "gallery.eyebrow": "Galeria",
       "gallery.title": "Um cheirinho do Azul",
-      "gallery.intro": "Fotos temporárias de ilustração — em breve, as verdadeiras imagens da casa.",
-      "gallery.slotStory": "Foto temporária — a substituir pela vossa sala",
-      "gallery.slotCouscous": "Foto temporária — a substituir pelo vosso couscous",
+      "gallery.intro": "Fotos temporárias de ilustração. Em breve, as verdadeiras imagens da casa.",
+      "gallery.slotStory": "Foto temporária, a substituir pela vossa sala",
+      "gallery.slotCouscous": "Foto temporária, a substituir pelo vosso couscous",
       "gallery.slot1": "A substituir: o vosso café",
       "gallery.slot2": "A substituir: uma mesa de brunch",
       "gallery.slot3": "A substituir: os doces orientais",
@@ -81,9 +81,9 @@
       "reviews.eyebrow": "Avaliações",
       "reviews.title": "5,0 estrelas no Google",
       "reviews.intro": "31 avaliações, todas de 5 estrelas. É a nossa maior recompensa.",
-      "reviews.r1": "« O couscous de sexta é de outro nível — sabores de casa, porções generosas. Já é um ritual nosso. »",
+      "reviews.r1": "« O couscous de sexta é de outro nível, sabores de casa e porções generosas. Já é um ritual nosso. »",
       "reviews.r2": "« Doces orientais deliciosos e um atendimento de uma simpatia rara. O melhor brunch halal de Lisboa. »",
-      "reviews.r3": "« Sítio pequeno e cheio de alma, mesmo ao lado do metro. Os crepes são feitos na hora — voltamos sempre. »",
+      "reviews.r3": "« Sítio pequeno e cheio de alma, mesmo ao lado do metro. Os crepes são feitos na hora e voltamos sempre. »",
       "reviews.cta": "Ler as avaliações no Google",
 
       "contact.eyebrow": "Contacto e acesso",
@@ -92,6 +92,7 @@
       "contact.landmark": "Junto ao El Corte Inglés · Metro São Sebastião",
       "contact.hoursLabel": "Horário",
       "contact.closed": "Fechado",
+      "contact.range": "das 9:00 às 22:00",
       "contact.fridayNote": "· dia de couscous",
       "contact.call": "Ligar",
       "contact.directions": "Itinerário",
@@ -99,11 +100,11 @@
       "days.mon": "Segunda", "days.tue": "Terça", "days.wed": "Quarta",
       "days.thu": "Quinta", "days.fri": "Sexta", "days.sat": "Sábado", "days.sun": "Domingo",
 
-      "footer.tagline": "O brunch argelino de Lisboa — caseiro e halal.",
-      "footer.hours": "Terça a domingo, 9:00 – 22:00",
+      "footer.tagline": "O brunch argelino de Lisboa, caseiro e halal.",
+      "footer.hours": "Terça a domingo, das 9:00 às 22:00",
       "footer.closedMon": "Segunda: fechado",
       "footer.followLabel": "Siga-nos",
-      "footer.mention": "Azul — brunch argelino em Lisboa"
+      "footer.mention": "Azul, brunch argelino em Lisboa"
     },
 
     en: {
@@ -126,8 +127,8 @@
       "hero.rating": "5.0 on Google · 31 reviews",
 
       "quick.todayLabel": "Today",
-      "quick.closed": "Closed — back Tuesday at 9:00",
-      "quick.open": "9:00 – 22:00",
+      "quick.closed": "Closed, back Tuesday at 9:00",
+      "quick.open": "9:00 to 22:00",
       "quick.halalLabel": "100% halal",
       "quick.halalSub": "Homemade cooking",
       "quick.reviews": "31 reviews",
@@ -135,21 +136,21 @@
       "story.eyebrow": "Our story",
       "story.title": "A little piece of Algeria in Bairro Azul",
       "story.p1": "Azul was born from a simple idea: to cook in Lisbon the way we cook at home in Algeria. No rush, good family recipes, and a door that's always open.",
-      "story.p2": "Here you'll find the couscous that brings everyone together on Fridays and oriental pastries made by us — but also crêpes, omelettes and quiches, fresh from the kitchen. The soul is Algerian; the table is generous and for everyone.",
+      "story.p2": "Here you'll find the couscous that brings everyone together on Fridays, oriental pastries we make ourselves, and also crêpes, omelettes and quiches fresh from the kitchen. The soul is Algerian and the table is generous, for everyone.",
       "story.p3": "We're two steps from São Sebastião metro and El Corte Inglés, with a quiet terrace for sunny days. Everything we serve is halal.",
 
       "couscous.eyebrow": "Fridays only",
       "couscous.title": "The Friday couscous ritual",
-      "couscous.p1": "In Algeria, Friday is couscous day — the day the whole family gathers around a single dish. At Azul we keep that ritual alive, right here in Lisbon.",
-      "couscous.p2": "Every Friday the semolina is worked by hand in the morning, the vegetables simmer slowly and the broth perfumes the whole house. When it's gone, it's gone — so come early.",
+      "couscous.p1": "In Algeria, Friday is couscous day, the day the whole family gathers around a single dish. At Azul we keep that ritual alive, right here in Lisbon.",
+      "couscous.p2": "Every Friday the semolina is worked by hand in the morning, the vegetables simmer slowly and the broth fills the whole house. When it's gone, it's gone, so come early.",
       "couscous.li1": "A family recipe, made from scratch every Friday",
-      "couscous.li2": "Limited quantities — while it lasts",
+      "couscous.li2": "Limited quantities, while it lasts",
       "couscous.li3": "100% halal, like everything in our kitchen",
       "couscous.cta": "Book my Friday",
 
       "menu.eyebrow": "The menu",
       "menu.title": "Homemade, generous, halal",
-      "menu.intro": "The soul of the house is Algerian — the couscous, the oriental pastries — and the table is varied: crêpes, omelettes, quiches and good coffee, all made by us.",
+      "menu.intro": "The soul of the house is Algerian, the couscous and the oriental pastries, and the table is varied: crêpes, omelettes, quiches and good coffee, all made by us.",
       "menu.sigFridayBadge": "Friday",
       "menu.sigCouscous": "Friday couscous",
       "menu.sigCouscousDesc": "Our special dish, made from scratch every Friday. While it lasts.",
@@ -160,9 +161,9 @@
 
       "gallery.eyebrow": "Gallery",
       "gallery.title": "A taste of Azul",
-      "gallery.intro": "Temporary placeholder photos — the real pictures of the house are coming soon.",
-      "gallery.slotStory": "Placeholder — replace with your dining room",
-      "gallery.slotCouscous": "Placeholder — replace with your couscous",
+      "gallery.intro": "Temporary placeholder photos. The real pictures of the house are coming soon.",
+      "gallery.slotStory": "Placeholder, replace with your dining room",
+      "gallery.slotCouscous": "Placeholder, replace with your couscous",
       "gallery.slot1": "Replace with: your coffee",
       "gallery.slot2": "Replace with: a brunch table",
       "gallery.slot3": "Replace with: the oriental pastries",
@@ -173,9 +174,9 @@
       "reviews.eyebrow": "Reviews",
       "reviews.title": "5.0 stars on Google",
       "reviews.intro": "31 reviews, every single one 5 stars. Our greatest reward.",
-      "reviews.r1": "“The Friday couscous is on another level — flavours from home, generous portions. It's become our ritual.”",
+      "reviews.r1": "“The Friday couscous is on another level, flavours from home and generous portions. It's become our ritual.”",
       "reviews.r2": "“Delicious oriental pastries and remarkably warm service. The best halal brunch in Lisbon.”",
-      "reviews.r3": "“A small place full of soul, right next to the metro. The crêpes are made to order — we always come back.”",
+      "reviews.r3": "“A small place full of soul, right next to the metro. The crêpes are made to order and we always come back.”",
       "reviews.cta": "Read the reviews on Google",
 
       "contact.eyebrow": "Contact & directions",
@@ -184,6 +185,7 @@
       "contact.landmark": "Next to El Corte Inglés · São Sebastião metro",
       "contact.hoursLabel": "Opening hours",
       "contact.closed": "Closed",
+      "contact.range": "9:00 to 22:00",
       "contact.fridayNote": "· couscous day",
       "contact.call": "Call us",
       "contact.directions": "Directions",
@@ -191,11 +193,11 @@
       "days.mon": "Monday", "days.tue": "Tuesday", "days.wed": "Wednesday",
       "days.thu": "Thursday", "days.fri": "Friday", "days.sat": "Saturday", "days.sun": "Sunday",
 
-      "footer.tagline": "Lisbon's Algerian brunch — homemade and halal.",
-      "footer.hours": "Tuesday to Sunday, 9:00 – 22:00",
+      "footer.tagline": "Lisbon's Algerian brunch, homemade and halal.",
+      "footer.hours": "Tuesday to Sunday, 9:00 to 22:00",
       "footer.closedMon": "Monday: closed",
       "footer.followLabel": "Follow us",
-      "footer.mention": "Azul — Algerian brunch in Lisbon"
+      "footer.mention": "Azul, Algerian brunch in Lisbon"
     },
 
     fr: {
@@ -218,8 +220,8 @@
       "hero.rating": "5,0 sur Google · 31 avis",
 
       "quick.todayLabel": "Aujourd'hui",
-      "quick.closed": "Fermé — retour mardi à 9h00",
-      "quick.open": "9h00 – 22h00",
+      "quick.closed": "Fermé, réouverture mardi à 9h00",
+      "quick.open": "de 9h00 à 22h00",
       "quick.halalLabel": "100% halal",
       "quick.halalSub": "Cuisine maison",
       "quick.reviews": "31 avis",
@@ -227,21 +229,21 @@
       "story.eyebrow": "Notre histoire",
       "story.title": "Un morceau d'Algérie dans le Bairro Azul",
       "story.p1": "Azul est né d'une idée simple : cuisiner à Lisbonne comme on cuisine à la maison, en Algérie. Sans se presser, avec de bonnes recettes de famille et une porte toujours ouverte.",
-      "story.p2": "Vous y trouverez le couscous qui rassemble tout le monde le vendredi, des pâtisseries orientales faites par nos soins, mais aussi des crêpes, omelettes et quiches tout juste sorties de la cuisine. L'âme est algérienne ; la table est généreuse et pour tous.",
+      "story.p2": "Vous y trouverez le couscous qui rassemble tout le monde le vendredi, des pâtisseries orientales faites par nos soins, et aussi des crêpes, omelettes et quiches tout juste sorties de la cuisine. L'âme est algérienne et la table est généreuse, pour tous.",
       "story.p3": "Nous sommes à deux pas du métro São Sebastião et d'El Corte Inglés, avec une terrasse tranquille pour les beaux jours. Tout ce que nous servons est halal.",
 
       "couscous.eyebrow": "Uniquement le vendredi",
       "couscous.title": "Le rituel du couscous du vendredi",
-      "couscous.p1": "En Algérie, le vendredi est le jour du couscous — celui où toute la famille se retrouve autour d'un même plat. Chez Azul, nous faisons vivre ce rituel, ici à Lisbonne.",
-      "couscous.p2": "Chaque vendredi, la semoule est travaillée à la main dès le matin, les légumes mijotent doucement et le bouillon parfume toute la maison. Quand il n'y en a plus, il n'y en a plus — venez tôt.",
+      "couscous.p1": "En Algérie, le vendredi est le jour du couscous, celui où toute la famille se retrouve autour d'un même plat. Chez Azul, nous faisons vivre ce rituel, ici à Lisbonne.",
+      "couscous.p2": "Chaque vendredi, la semoule est travaillée à la main dès le matin, les légumes mijotent doucement et le bouillon parfume toute la maison. Quand il n'y en a plus, il n'y en a plus, alors venez tôt.",
       "couscous.li1": "Une recette de famille, préparée de A à Z chaque vendredi",
-      "couscous.li2": "Quantités limitées — jusqu'à épuisement",
+      "couscous.li2": "Quantités limitées, jusqu'à épuisement",
       "couscous.li3": "100% halal, comme tout dans notre cuisine",
       "couscous.cta": "Réserver mon vendredi",
 
       "menu.eyebrow": "Le menu",
       "menu.title": "Maison, généreux, halal",
-      "menu.intro": "L'âme de la maison est algérienne — le couscous, les pâtisseries orientales — et la carte est variée : crêpes, omelettes, quiches et bons cafés, tout est fait par nous.",
+      "menu.intro": "L'âme de la maison est algérienne, le couscous et les pâtisseries orientales, et la carte est variée : crêpes, omelettes, quiches et bons cafés, tout est fait par nous.",
       "menu.sigFridayBadge": "Vendredi",
       "menu.sigCouscous": "Couscous du vendredi",
       "menu.sigCouscousDesc": "Notre plat spécial, préparé de A à Z chaque vendredi. Jusqu'à épuisement.",
@@ -252,9 +254,9 @@
 
       "gallery.eyebrow": "Galerie",
       "gallery.title": "Un avant-goût d'Azul",
-      "gallery.intro": "Photos temporaires d'illustration — bientôt les vraies images de la maison.",
-      "gallery.slotStory": "Photo temporaire — à remplacer par votre salle",
-      "gallery.slotCouscous": "Photo temporaire — à remplacer par votre couscous",
+      "gallery.intro": "Photos temporaires d'illustration. Bientôt les vraies images de la maison.",
+      "gallery.slotStory": "Photo temporaire, à remplacer par votre salle",
+      "gallery.slotCouscous": "Photo temporaire, à remplacer par votre couscous",
       "gallery.slot1": "À remplacer : votre café",
       "gallery.slot2": "À remplacer : une table de brunch",
       "gallery.slot3": "À remplacer : les pâtisseries orientales",
@@ -265,9 +267,9 @@
       "reviews.eyebrow": "Avis",
       "reviews.title": "5,0 étoiles sur Google",
       "reviews.intro": "31 avis, tous à 5 étoiles. Notre plus belle récompense.",
-      "reviews.r1": "« Le couscous du vendredi est d'un autre niveau — des saveurs de maison, des portions généreuses. C'est devenu notre rituel. »",
+      "reviews.r1": "« Le couscous du vendredi est d'un autre niveau, des saveurs de maison et des portions généreuses. C'est devenu notre rituel. »",
       "reviews.r2": "« Pâtisseries orientales délicieuses et un accueil d'une gentillesse rare. Le meilleur brunch halal de Lisbonne. »",
-      "reviews.r3": "« Petit lieu plein d'âme, juste à côté du métro. Les crêpes sont faites minute — on y retourne toujours. »",
+      "reviews.r3": "« Petit lieu plein d'âme, juste à côté du métro. Les crêpes sont faites minute et on y retourne toujours. »",
       "reviews.cta": "Lire les avis sur Google",
 
       "contact.eyebrow": "Contact et accès",
@@ -276,6 +278,7 @@
       "contact.landmark": "À côté d'El Corte Inglés · Métro São Sebastião",
       "contact.hoursLabel": "Horaires",
       "contact.closed": "Fermé",
+      "contact.range": "de 9h00 à 22h00",
       "contact.fridayNote": "· jour de couscous",
       "contact.call": "Appeler",
       "contact.directions": "Itinéraire",
@@ -283,11 +286,11 @@
       "days.mon": "Lundi", "days.tue": "Mardi", "days.wed": "Mercredi",
       "days.thu": "Jeudi", "days.fri": "Vendredi", "days.sat": "Samedi", "days.sun": "Dimanche",
 
-      "footer.tagline": "Le brunch algérien de Lisbonne — maison et halal.",
-      "footer.hours": "Du mardi au dimanche, 9h00 – 22h00",
+      "footer.tagline": "Le brunch algérien de Lisbonne, maison et halal.",
+      "footer.hours": "Du mardi au dimanche, de 9h00 à 22h00",
       "footer.closedMon": "Lundi : fermé",
       "footer.followLabel": "Suivez-nous",
-      "footer.mention": "Azul — brunch algérien à Lisbonne"
+      "footer.mention": "Azul, brunch algérien à Lisbonne"
     }
   };
 
@@ -295,7 +298,7 @@
      LE MENU
      ⚠️ GÉRANT : VÉRIFIER TOUS LES PRIX CI-DESSOUS AVANT MISE EN LIGNE.
      Chaque item : nom traduit (pt/en/fr), description optionnelle, prix.
-     price: null → affiche un tiret (prix variable / à demander).
+     price: null → l'item s'affiche sans prix (ex. variété du jour).
      ──────────────────────────────────────────────────────────────────── */
   const MENU = [
     {
@@ -317,7 +320,7 @@
           title: { pt: "Doces orientais", en: "Oriental pastries", fr: "Pâtisseries orientales" },
           items: [
             {
-              name: { pt: "Doces orientais — variedade do dia", en: "Oriental pastries — today's selection", fr: "Pâtisseries orientales — assortiment du jour" },
+              name: { pt: "Doces orientais, variedade do dia", en: "Oriental pastries, today's selection", fr: "Pâtisseries orientales, assortiment du jour" },
               desc: { pt: "Feitos por nós: mel, amêndoa, flor de laranjeira", en: "Homemade: honey, almonds, orange blossom", fr: "Faits maison : miel, amande, fleur d'oranger" },
               price: null
             }
@@ -420,7 +423,7 @@
               price: "3,00 €"
             },
             {
-              name: { pt: "Doces orientais — variedade do dia", en: "Oriental pastries — today's selection", fr: "Pâtisseries orientales — assortiment du jour" },
+              name: { pt: "Doces orientais, variedade do dia", en: "Oriental pastries, today's selection", fr: "Pâtisseries orientales, assortiment du jour" },
               price: null
             }
           ]
@@ -447,7 +450,7 @@
           items: [
             { name: { pt: "Sumo de laranja natural", en: "Fresh orange juice", fr: "Jus d'orange pressé" }, price: "2,90 €" },
             { name: { pt: "Batido (baunilha ou chocolate)", en: "Milkshake (vanilla or chocolate)", fr: "Milkshake (vanille ou chocolat)" }, price: "3,90 €" },
-            { name: { pt: "Mojito sem álcool", en: "Alcohol-free mojito", fr: "Mojito sans alcool" }, price: "3,90 €" },
+            { name: { pt: "Mojito sem álcool", en: "Alcohol free mojito", fr: "Mojito sans alcool" }, price: "3,90 €" },
             {
               name: { pt: "Refrigerantes e águas", en: "Soft drinks & water", fr: "Sodas et eaux" },
               desc: { pt: "Perguntar ao balcão", en: "Ask at the counter", fr: "Demander au comptoir" },
@@ -558,15 +561,22 @@
             nameEl.appendChild(descEl);
           }
 
-          const dots = document.createElement("span");
-          dots.className = "menu-item-dots";
-          dots.setAttribute("aria-hidden", "true");
+          if (item.price) {
+            const dots = document.createElement("span");
+            dots.className = "menu-item-dots";
+            dots.setAttribute("aria-hidden", "true");
 
-          const priceEl = document.createElement("span");
-          priceEl.className = "menu-item-price";
-          priceEl.textContent = item.price || "—";
+            const priceEl = document.createElement("span");
+            priceEl.className = "menu-item-price";
+            priceEl.textContent = item.price;
 
-          row.append(nameEl, dots, priceEl);
+            row.append(nameEl, dots, priceEl);
+          } else {
+            // Item sans prix fixe (variété du jour) : nom seul, pleine largeur
+            row.classList.add("menu-item--note");
+            row.append(nameEl);
+          }
+
           groupEl.appendChild(row);
         });
 
@@ -644,6 +654,15 @@
     });
   }
 
+  /* ── Ombre de la barre de navigation au défilement (touche premium) ── */
+  function initNavShadow() {
+    const nav = $(".nav");
+    if (!nav) return;
+    const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
   /* ── Apparition en fondu au défilement ────────────────────────────── */
   function initReveal() {
     if (!("IntersectionObserver" in window)) {
@@ -659,8 +678,7 @@
           }
         });
       },
-      /* seuil bas + léger retrait en bas : fiable même pour les sections
-         très hautes sur petit écran */
+      // seuil bas + léger retrait en bas : fiable même pour les sections hautes
       { threshold: 0, rootMargin: "0px 0px -60px 0px" }
     );
     $$(".reveal").forEach((el) => observer.observe(el));
@@ -695,6 +713,7 @@
     initBurger();
     initLangSwitch();
     initImageFallback();
+    initNavShadow();
     applyLang(detectLang()); // rend aussi le menu et les horaires
     initReveal();
 
