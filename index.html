@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!--
+  ══════════════════════════════════════════════════════════════════════
+  AZUL CAFFÈ & BRUNCH'S — Site vitrine one page
+  Brunch algérien à Lisbonne · cuisine maison · halal
+  Stack : HTML / CSS / JS purs, aucun framework. S'ouvre en double-cliquant.
+
+  ⚠️  AVANT MISE EN LIGNE, LE GÉRANT DOIT :
+      1. Vérifier TOUS les prix du menu (dans script.js, objet MENU).
+      2. Remplacer les photos Unsplash temporaires (cherchez "TODO PHOTO").
+      3. Renseigner téléphone, WhatsApp, Instagram (cherchez "TODO CONTACT").
+      4. Remplacer le lien de la fiche Google (cherchez "TODO GOOGLE").
+      Voir la check-list complète dans README.md.
+  ══════════════════════════════════════════════════════════════════════
+-->
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ══ SEO local : brunch São Sebastião, restaurante argelino Lisboa, couscous Lisboa, brunch halal Lisboa ══ -->
+  <title>Azul Caffè &amp; Brunch's — Brunch argelino e halal em Lisboa | Couscous, doces orientais | São Sebastião</title>
+  <meta name="description" content="Azul Caffè &amp; Brunch's: o brunch argelino de Lisboa, junto ao metro São Sebastião e ao El Corte Inglés. Couscous à sexta-feira, doces orientais, crepes caseiros, tudo halal. 5,0★ no Google.">
+  <meta name="keywords" content="brunch São Sebastião, restaurante argelino Lisboa, couscous Lisboa, brunch halal Lisboa, doces orientais Lisboa, Bairro Azul">
+  <link rel="canonical" href="https://azulcaffe.example.com/"><!-- TODO CONTACT : remplacer par le vrai domaine une fois le site en ligne -->
+
+  <!-- Open Graph / Twitter Card — partage propre sur les réseaux -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Azul Caffè &amp; Brunch's — O brunch argelino de Lisboa">
+  <meta property="og:description" content="Cozinha caseira, halal, no coração do Bairro Azul. Couscous à sexta-feira, doces orientais e crepes todos os dias. 5,0★ no Google.">
+  <meta property="og:url" content="https://azulcaffe.example.com/">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <!-- TODO PHOTO : remplacer l'image de partage par une vraie photo du restaurant (1200×630 px recommandé) -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1200&amp;q=70">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Azul Caffè &amp; Brunch's — O brunch argelino de Lisboa">
+  <meta name="twitter:description" content="Cozinha caseira, halal, no coração do Bairro Azul. Couscous à sexta-feira, doces orientais e crepes todos os dias.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1200&amp;q=70">
+
+  <!-- Site one page (une seule URL pour les 3 langues, contenu commuté en JS) :
+       hreflang non pertinent ici. La langue est déclarée via l'attribut lang,
+       mis à jour dynamiquement par script.js. -->
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts : Fraunces (titres) + Inter (texte) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- ══ Données structurées Schema.org (référencement local) ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Azul Caffè & Brunch's",
+    "description": "Brunch argelino em Lisboa. Cozinha caseira e halal: couscous à sexta-feira, doces orientais, crepes, omeletes e quiches.",
+    "servesCuisine": ["Algerian", "North African", "Brunch", "Café"],
+    "priceRange": "€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Ressano Garcia 43",
+      "postalCode": "1070-234",
+      "addressLocality": "Lisboa",
+      "addressCountry": "PT"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 38.7367, "longitude": -9.1547 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "09:00",
+      "closes": "22:00"
+    }],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "31" },
+    "url": "https://azulcaffe.example.com/",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=70",
+    "hasMenu": "https://azulcaffe.example.com/#menu",
+    "acceptsReservations": "True"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Lien d'évitement pour la navigation clavier -->
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar para o conteúdo</a>
+
+  <!-- ════════════════════ 1. NAVIGATION ════════════════════ -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a href="#top" class="brand" aria-label="Azul Caffè &amp; Brunch's — voltar ao topo">
+        <!-- Monogramme : étoile à huit branches, clin d'œil au zellige -->
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0F2E42"/>
+          <g fill="none" stroke="#D9B26A" stroke-width="3">
+            <rect x="18" y="18" width="28" height="28"/>
+            <rect x="18" y="18" width="28" height="28" transform="rotate(45 32 32)"/>
+          </g>
+          <circle cx="32" cy="32" r="5" fill="#C46B4A"/>
+        </svg>
+        <span class="brand-name">Azul <em>Caffè &amp; Brunch's</em></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Navegação principal">
+        <a href="#historia" data-i18n="nav.story">A nossa história</a>
+        <a href="#couscous" data-i18n="nav.couscous">Couscous de sexta</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#galeria" data-i18n="nav.gallery">Galeria</a>
+        <a href="#avaliacoes" data-i18n="nav.reviews">Avaliações</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="nav-right">
+        <!-- Sélecteur de langue : PT par défaut, EN, FR -->
+        <div class="lang-switch" role="group" aria-label="Idioma / Language / Langue">
+          <button type="button" data-lang="pt" class="lang-btn is-active" aria-pressed="true">PT</button>
+          <button type="button" data-lang="en" class="lang-btn" aria-pressed="false">EN</button>
+          <button type="button" data-lang="fr" class="lang-btn" aria-pressed="false">FR</button>
+        </div>
+
+        <!-- Burger mobile -->
+        <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:a11y.openMenu" aria-label="Abrir o menu de navegação">
+          <svg class="icon-burger" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ════════════════════ 2. HÉROS ════════════════════ -->
+    <!-- TODO PHOTO : remplacer l'image de fond du héros (dans styles.css, .hero)
+         par une vraie photo d'ambiance du restaurant — idéalement la terrasse au
+         store turquoise ou la salle. Dimensions recommandées : 1920×1280 px. -->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Bairro Azul · São Sebastião · Lisboa</p>
+        <h1 class="hero-title" data-i18n="hero.title">O brunch argelino de Lisboa.</h1>
+        <p class="hero-sub" data-i18n="hero.sub">Cozinha caseira, halal, no coração do Bairro Azul.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu" data-i18n="hero.ctaMenu">Ver o menu</a>
+          <a class="btn btn-ghost" href="#contacto" data-i18n="hero.ctaVisit">Como chegar</a>
+        </div>
+        <a class="hero-rating" href="https://www.google.com/search?q=Azul+Caff%C3%A8+%26+Brunch%27s+Lisboa" target="_blank" rel="noopener">
+          <!-- TODO GOOGLE : remplacer le lien ci-dessus par le lien direct de la fiche Google Business -->
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span data-i18n="hero.rating">5,0 no Google · 31 avaliações</span>
+        </a>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false"><path d="M12 5v14m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 3. BANDEAU D'INFOS RAPIDES ════════════════════ -->
+    <section class="quick-info" aria-label="Informações rápidas">
+      <div class="quick-info-inner">
+        <div class="quick-item">
+          <svg class="qi-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <div>
+            <strong data-i18n="quick.todayLabel">Hoje</strong>
+            <span id="today-hours">9:00 – 22:00</span>
+          </div>
+        </div>
+        <div class="quick-item">
+          <svg class="qi-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.5 4.5A8 8 0 1 0 20 12a6.5 6.5 0 1 1-2.5-7.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <div>
+            <strong data-i18n="quick.halalLabel">100% halal</strong>
+            <span data-i18n="quick.halalSub">Cozinha caseira</span>
+          </div>
+        </div>
+        <div class="quick-item">
+          <svg class="qi-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.5l2.5 5.3 5.8.7-4.3 4 1.1 5.7L12 16.4l-5.1 2.8 1.1-5.7-4.3-4 5.8-.7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <div>
+            <strong>5,0 ★ Google</strong>
+            <span data-i18n="quick.reviews">31 avaliações</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 4. NOTRE HISTOIRE ════════════════════ -->
+    <section class="section story reveal" id="historia">
+      <div class="container story-grid">
+        <div class="story-text">
+          <p class="section-eyebrow" data-i18n="story.eyebrow">A nossa história</p>
+          <h2 data-i18n="story.title">Um pedaço da Argélia no Bairro Azul</h2>
+          <p data-i18n="story.p1">O Azul nasceu de uma ideia simples: cozinhar em Lisboa como se cozinha em casa, na Argélia. Sem pressa, com boas receitas de família e a porta sempre aberta.</p>
+          <p data-i18n="story.p2">Aqui encontra o couscous que junta toda a gente à sexta-feira, doces orientais feitos por nós, mas também crepes, omeletes e quiches acabados de fazer. A alma é argelina; a mesa é generosa e para todos.</p>
+          <p data-i18n="story.p3">Estamos a dois passos do metro São Sebastião e do El Corte Inglés, com uma esplanada tranquila para os dias de sol. Tudo o que servimos é halal.</p>
+        </div>
+        <figure class="story-media">
+          <!-- TODO PHOTO : remplacer par une vraie photo de la salle ou de l'équipe.
+               Dimensions recommandées : 1000×1250 px (portrait). -->
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1000&q=70"
+               alt="Interior acolhedor de um café com mesas de madeira e luz quente"
+               loading="lazy" width="1000" height="1250" class="ph-img">
+          <figcaption class="photo-slot" data-i18n="gallery.slotStory">Foto temporária — a substituir pela vossa sala</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Séparateur zellige -->
+    <div class="zellige-divider" aria-hidden="true"></div>
+
+    <!-- ════════════════════ 5. LE COUSCOUS DU VENDREDI ════════════════════ -->
+    <section class="section couscous reveal" id="couscous">
+      <div class="container couscous-grid">
+        <figure class="couscous-media">
+          <!-- TODO PHOTO : LA photo importante du site — le vrai couscous du vendredi,
+               fumant, servi à table. Dimensions recommandées : 1200×900 px. -->
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=70"
+               alt="Prato tradicional generoso servido num tacho, com legumes e especiarias"
+               loading="lazy" width="1200" height="900" class="ph-img">
+          <figcaption class="photo-slot" data-i18n="gallery.slotCouscous">Foto temporária — a substituir pelo vosso couscous</figcaption>
+        </figure>
+        <div class="couscous-text">
+          <p class="section-eyebrow couscous-eyebrow" data-i18n="couscous.eyebrow">Só à sexta-feira</p>
+          <h2 data-i18n="couscous.title">O ritual do couscous de sexta</h2>
+          <p data-i18n="couscous.p1">Na Argélia, a sexta-feira é dia de couscous — o dia em que a família se junta à volta de um prato só. No Azul mantemos esse ritual, aqui em Lisboa.</p>
+          <p data-i18n="couscous.p2">Todas as sextas, a sêmola é trabalhada à mão de manhã, os legumes cozem devagar e o caldo perfuma a casa inteira. Quando acaba, acabou — por isso o melhor é chegar cedo.</p>
+          <ul class="couscous-points">
+            <li data-i18n="couscous.li1">Receita de família, feita de raiz todas as sextas</li>
+            <li data-i18n="couscous.li2">Quantidades limitadas — enquanto durar</li>
+            <li data-i18n="couscous.li3">100% halal, como tudo na nossa cozinha</li>
+          </ul>
+          <a class="btn btn-terracotta" href="#contacto" data-i18n="couscous.cta">Reservar a minha sexta</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="zellige-divider" aria-hidden="true"></div>
+
+    <!-- ════════════════════ 6. MENU ════════════════════ -->
+    <section class="section menu-section reveal" id="menu">
+      <div class="container">
+        <p class="section-eyebrow" data-i18n="menu.eyebrow">O menu</p>
+        <h2 data-i18n="menu.title">Caseiro, generoso, halal</h2>
+        <p class="section-intro" data-i18n="menu.intro">A alma da casa é argelina — o couscous, os doces orientais — e a mesa é variada: crepes, omeletes, quiches e bons cafés, tudo feito por nós.</p>
+
+        <!-- Cartes signature -->
+        <div class="signature-cards">
+          <article class="signature-card">
+            <span class="signature-badge" data-i18n="menu.sigFridayBadge">Sexta-feira</span>
+            <h3 data-i18n="menu.sigCouscous">Couscous de sexta-feira</h3>
+            <p data-i18n="menu.sigCouscousDesc">O nosso prato especial, feito de raiz todas as sextas. Enquanto durar.</p>
+          </article>
+          <article class="signature-card">
+            <span class="signature-badge" data-i18n="menu.sigDailyBadge">Todos os dias</span>
+            <h3 data-i18n="menu.sigPastries">Doces orientais</h3>
+            <p data-i18n="menu.sigPastriesDesc">Variedade do dia, feita por nós: mel, amêndoa, flor de laranjeira.</p>
+          </article>
+        </div>
+
+        <!-- Onglets de catégories (contenu généré par script.js à partir de l'objet MENU) -->
+        <div class="menu-tabs" role="tablist" aria-label="Categorias do menu" id="menu-tabs"></div>
+        <div id="menu-panels"></div>
+
+        <p class="menu-note" data-i18n="menu.note">Preços com IVA incluído. A carta pode variar consoante o mercado do dia.</p>
+        <noscript><p class="menu-note">Ative o JavaScript para ver o menu completo. / Enable JavaScript to see the full menu.</p></noscript>
+      </div>
+    </section>
+
+    <div class="zellige-divider" aria-hidden="true"></div>
+
+    <!-- ════════════════════ 7. GALERIE ════════════════════ -->
+    <section class="section gallery reveal" id="galeria">
+      <div class="container">
+        <p class="section-eyebrow" data-i18n="gallery.eyebrow">Galeria</p>
+        <h2 data-i18n="gallery.title">Um cheirinho do Azul</h2>
+        <p class="section-intro" data-i18n="gallery.intro">Fotos temporárias de ilustração — em breve, as verdadeiras imagens da casa.</p>
+
+        <!-- TODO PHOTO : les 6 tuiles ci-dessous sont des emplacements à remplir par le
+             gérant avec de vraies photos. Dimensions recommandées : 1200×900 px chacune.
+             L'étiquette sur chaque tuile indique la photo attendue. -->
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=900&q=70" alt="Chávena de café com latte art sobre mesa de madeira" loading="lazy" width="900" height="900" class="ph-img">
+            <figcaption class="photo-slot" data-i18n="gallery.slot1">A substituir: o vosso café</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=900&q=70" alt="Mesa de brunch com panquecas, fruta e sumo de laranja" loading="lazy" width="900" height="900" class="ph-img">
+            <figcaption class="photo-slot" data-i18n="gallery.slot2">A substituir: uma mesa de brunch</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=70" alt="Sobremesa doce com chocolate servida em prato pequeno" loading="lazy" width="900" height="900" class="ph-img">
+            <figcaption class="photo-slot" data-i18n="gallery.slot3">A substituir: os doces orientais</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=70" alt="Pratos coloridos e frescos vistos de cima" loading="lazy" width="900" height="900" class="ph-img">
+            <figcaption class="photo-slot" data-i18n="gallery.slot4">A substituir: o couscous de sexta</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=70" alt="Fachada de um café acolhedor com esplanada" loading="lazy" width="900" height="900" class="ph-img">
+            <figcaption class="photo-slot" data-i18n="gallery.slot5">A substituir: a esplanada turquesa</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1555881400-74d7acaacc8b?auto=format&fit=crop&w=900&q=70" alt="Rua típica de Lisboa com elétrico amarelo" loading="lazy" width="900" height="900" class="ph-img">
+            <figcaption class="photo-slot" data-i18n="gallery.slot6">A substituir: o bairro, São Sebastião</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="zellige-divider" aria-hidden="true"></div>
+
+    <!-- ════════════════════ 8. AVIS CLIENTS ════════════════════ -->
+    <section class="section reviews reveal" id="avaliacoes">
+      <div class="container">
+        <p class="section-eyebrow" data-i18n="reviews.eyebrow">Avaliações</p>
+        <h2 data-i18n="reviews.title">5,0 estrelas no Google</h2>
+        <p class="section-intro" data-i18n="reviews.intro">31 avaliações, todas de 5 estrelas. É a nossa maior recompensa.</p>
+
+        <!-- TODO GOOGLE : les 3 avis ci-dessous sont illustratifs (rédigés pour la maquette).
+             Remplacer par de vrais extraits d'avis Google, avec l'accord de leurs auteurs. -->
+        <div class="reviews-grid">
+          <blockquote class="review-card">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <p data-i18n="reviews.r1">« O couscous de sexta é de outro nível — sabores de casa, porções generosas. Já é um ritual nosso. »</p>
+            <footer>— Sofia M.</footer>
+          </blockquote>
+          <blockquote class="review-card">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <p data-i18n="reviews.r2">« Doces orientais deliciosos e um atendimento de uma simpatia rara. O melhor brunch halal de Lisboa. »</p>
+            <footer>— Karim B.</footer>
+          </blockquote>
+          <blockquote class="review-card">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <p data-i18n="reviews.r3">« Sítio pequeno e cheio de alma, mesmo ao lado do metro. Os crepes são feitos na hora — voltamos sempre. »</p>
+            <footer>— Inês R.</footer>
+          </blockquote>
+        </div>
+
+        <div class="reviews-cta">
+          <!-- TODO GOOGLE : remplacer par le lien direct de la fiche Google Business -->
+          <a class="btn btn-outline" href="https://www.google.com/search?q=Azul+Caff%C3%A8+%26+Brunch%27s+Lisboa" target="_blank" rel="noopener" data-i18n="reviews.cta">Ler as avaliações no Google</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="zellige-divider" aria-hidden="true"></div>
+
+    <!-- ════════════════════ 9. CONTACT & ACCÈS ════════════════════ -->
+    <section class="section contact reveal" id="contacto">
+      <div class="container">
+        <p class="section-eyebrow" data-i18n="contact.eyebrow">Contacto e acesso</p>
+        <h2 data-i18n="contact.title">Venha ver-nos</h2>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-block">
+              <h3 data-i18n="contact.addressLabel">Morada</h3>
+              <p>
+                Avenida Ressano Garcia 43<br>
+                1070-234 Lisboa — Bairro Azul<br>
+                <span data-i18n="contact.landmark">Junto ao El Corte Inglés · Metro São Sebastião</span>
+              </p>
+            </div>
+
+            <div class="contact-block">
+              <h3 data-i18n="contact.hoursLabel">Horário</h3>
+              <table class="hours-table" id="hours-table">
+                <tr data-day="1"><th data-i18n="days.mon">Segunda</th><td data-i18n="contact.closed">Fechado</td></tr>
+                <tr data-day="2"><th data-i18n="days.tue">Terça</th><td>9:00 – 22:00</td></tr>
+                <tr data-day="3"><th data-i18n="days.wed">Quarta</th><td>9:00 – 22:00</td></tr>
+                <tr data-day="4"><th data-i18n="days.thu">Quinta</th><td>9:00 – 22:00</td></tr>
+                <tr data-day="5"><th data-i18n="days.fri">Sexta</th><td>9:00 – 22:00 <span class="hours-note" data-i18n="contact.fridayNote">· dia de couscous</span></td></tr>
+                <tr data-day="6"><th data-i18n="days.sat">Sábado</th><td>9:00 – 22:00</td></tr>
+                <tr data-day="0"><th data-i18n="days.sun">Domingo</th><td>9:00 – 22:00</td></tr>
+              </table>
+            </div>
+
+            <div class="contact-actions">
+              <!-- TODO CONTACT : remplacer +351000000000 par le vrai numéro de téléphone -->
+              <a class="btn btn-primary" href="tel:+351000000000">
+                <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.8l2.3-.6a1.5 1.5 0 0 1 1.7.9l1 2.4a1.5 1.5 0 0 1-.4 1.7L9.9 9.4a12 12 0 0 0 4.7 4.7l1.2-1.3a1.5 1.5 0 0 1 1.7-.4l2.4 1a1.5 1.5 0 0 1 .9 1.7l-.6 2.3a1.6 1.6 0 0 1-1.6 1.2A15.4 15.4 0 0 1 5.4 5.4a1.6 1.6 0 0 1 1.2-1.6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+                <span data-i18n="contact.call">Ligar</span>
+              </a>
+              <!-- TODO CONTACT : remplacer 351000000000 par le vrai numéro WhatsApp (format international sans +) -->
+              <a class="btn btn-whatsapp" href="https://wa.me/351000000000" target="_blank" rel="noopener">
+                <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 8.5c.6 2.8 3.7 5.9 6.5 6.5l.9-1.7-2-1.2-1 .8a6.6 6.6 0 0 1-2.3-2.3l.8-1-1.2-2z" fill="currentColor"/></svg>
+                WhatsApp
+              </a>
+              <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&destination=Avenida+Ressano+Garcia+43,+1070-234+Lisboa" target="_blank" rel="noopener">
+                <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.4-6.5-10.2a6.5 6.5 0 0 1 13 0C18.5 15.6 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10.5" r="2.3" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+                <span data-i18n="contact.directions">Itinerário</span>
+              </a>
+              <!-- TODO CONTACT : remplacer par le vrai profil Instagram du restaurant -->
+              <a class="btn btn-outline" href="https://www.instagram.com/" target="_blank" rel="noopener">
+                <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="4.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="16.8" cy="7.2" r="1.2" fill="currentColor"/></svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-map">
+            <!-- Carte Google Maps centrée sur l'adresse (iframe sans clé API, chargée en lazy) -->
+            <iframe
+              src="https://www.google.com/maps?q=Avenida+Ressano+Garcia+43,+1070-234+Lisboa&hl=pt&z=16&output=embed"
+              width="600" height="480" style="border:0"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa: Azul Caffè &amp; Brunch's, Avenida Ressano Garcia 43, Lisboa"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════════════════ 10. PIED DE PAGE ════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-name">Azul <em>Caffè &amp; Brunch's</em></p>
+        <p class="footer-tagline" data-i18n="footer.tagline">O brunch argelino de Lisboa — caseiro e halal.</p>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="contact.addressLabel">Morada</h3>
+        <p>Avenida Ressano Garcia 43<br>1070-234 Lisboa</p>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="contact.hoursLabel">Horário</h3>
+        <p><span data-i18n="footer.hours">Terça a domingo, 9:00 – 22:00</span><br><span data-i18n="footer.closedMon">Segunda: fechado</span></p>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer.followLabel">Siga-nos</h3>
+        <!-- TODO CONTACT : remplacer par le vrai profil Instagram -->
+        <p><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><br>
+        <!-- TODO GOOGLE : lien direct de la fiche Google -->
+        <a href="https://www.google.com/search?q=Azul+Caff%C3%A8+%26+Brunch%27s+Lisboa" target="_blank" rel="noopener">Google</a></p>
+      </div>
+    </div>
+    <p class="footer-bottom">© <span id="year">2026</span> Azul Caffè &amp; Brunch's · <span data-i18n="footer.mention">Azul — brunch argelino em Lisboa</span></p>
+  </footer>
+
+  <!-- Bouton WhatsApp flottant, toujours visible -->
+  <!-- TODO CONTACT : remplacer 351000000000 par le vrai numéro WhatsApp (format wa.me : indicatif pays + numéro, sans + ni espaces) -->
+  <a class="whatsapp-float" href="https://wa.me/351000000000" target="_blank" rel="noopener" data-i18n-attr="aria-label:a11y.whatsapp" aria-label="Falar connosco no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.5 21.5l4.9-1.3A9.4 9.4 0 1 0 12 2.5z" fill="currentColor"/><path d="M8.9 7.4c-.3 0-.6.1-.8.4-.7.8-.9 2 .1 3.6a13 13 0 0 0 4.4 4.3c1.7 1 2.9.8 3.6 0 .3-.3.5-.7.4-1.1l-.2-.7a.8.8 0 0 0-.5-.5l-1.7-.7a.8.8 0 0 0-.9.2l-.5.5a.4.4 0 0 1-.5.1 8.3 8.3 0 0 1-2.4-2.4.4.4 0 0 1 .1-.5l.5-.5a.8.8 0 0 0 .2-.9l-.7-1.6a.8.8 0 0 0-.6-.5z" fill="#fff"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

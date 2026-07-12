@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+  <!--
+    Image de secours affichée automatiquement si une photo externe ne charge pas.
+    Elle reprend les couleurs de la marque + le motif zellige, pour que le site
+    reste présentable même hors ligne ou si Unsplash est indisponible.
+  -->
+  <rect width="1200" height="900" fill="#0F2E42"/>
+  <defs>
+    <pattern id="z" width="80" height="80" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#D9B26A" stroke-opacity="0.22">
+        <rect x="23" y="23" width="34" height="34"/>
+        <rect x="23" y="23" width="34" height="34" transform="rotate(45 40 40)"/>
+        <path d="M0 40h17M63 40h17M40 0v17M40 63V80"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#z)"/>
+  <g fill="none" stroke="#D9B26A" stroke-width="6">
+    <rect x="540" y="390" width="120" height="120"/>
+    <rect x="540" y="390" width="120" height="120" transform="rotate(45 600 450)"/>
+  </g>
+  <circle cx="600" cy="450" r="16" fill="#C46B4A"/>
+</svg>
