@@ -45,10 +45,10 @@
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-  <!-- Google Fonts : Fraunces (titres) + Inter (texte) -->
+  <!-- Google Fonts : Fraunces (titres) + Inter (texte) + Noto Sans Tifinagh (mot amazigh « Azul ») -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Tifinagh&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -189,19 +189,24 @@
       <div class="container story-grid">
         <div class="story-text">
           <p class="section-eyebrow" data-i18n="story.eyebrow">A nossa história</p>
-          <h2 data-i18n="story.title">Um pedaço da Argélia no Bairro Azul</h2>
-          <p data-i18n="story.p1">O Azul nasceu de uma ideia simples: cozinhar em Lisboa como se cozinha em casa, na Argélia. Sem pressa, com boas receitas de família e a porta sempre aberta.</p>
-          <p data-i18n="story.p2">Aqui encontra o couscous que junta toda a gente à sexta, doces orientais feitos por nós e também crepes, omeletes e quiches acabados de fazer. A alma é argelina e a mesa é generosa, para todos.</p>
-          <p data-i18n="story.p3">Estamos a dois passos do metro São Sebastião e do El Corte Inglés, com uma esplanada tranquila para os dias de sol. Tudo o que servimos é halal.</p>
+          <h2 data-i18n="story.title">Azul quer dizer olá</h2>
+          <p data-i18n="story.p1">Na nossa língua materna, o tamazight dos berberes, «azul» é a primeira palavra que se diz a quem chega: olá, entra, senta-te. Em português, «azul» é a cor do céu de Lisboa e dos azulejos que forram a cidade. Foi essa ponte que quisemos dar de nome à casa.</p>
+          <p data-i18n="story.p2">Trouxemos connosco a cozinha com que crescemos, a da Argélia e das montanhas amazighes: o couscous que junta a família à sexta, os doces de mel e amêndoa, o pão amassado de manhã. Nada sai da nossa cozinha que não faríamos para os nossos.</p>
+          <p data-i18n="story.p3">Lisboa recebeu-nos como se recebe em casa. É uma cidade de encontro, de luz atlântica e de gente de toda a parte, e por isso fez sentido abrir aqui, no Bairro Azul, uma mesa onde duas culturas se sentam lado a lado.</p>
+          <p class="story-closing" data-i18n="story.p4">O Azul não é só um restaurante. É um sítio onde se diz «olá» em duas línguas e onde ninguém almoça sozinho.</p>
         </div>
-        <figure class="story-media">
-          <!-- TODO PHOTO : remplacer par une vraie photo de la salle ou de l'équipe.
-               Dimensions recommandées : 1000×1250 px (portrait). -->
-          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1000&q=70"
-               alt="Interior acolhedor de um café com mesas de madeira e luz quente"
-               loading="lazy" width="1000" height="1250" class="ph-img">
-          <figcaption class="photo-slot" data-i18n="gallery.slotStory">Foto temporária, a substituir pela vossa sala</figcaption>
-        </figure>
+
+        <!-- Carte du nom : remplace un cadre photo sans intérêt par un objet
+             typographique authentique (le double sens de « Azul », en tifinagh). -->
+        <aside class="name-card" aria-labelledby="name-card-word">
+          <span class="name-card__tifinagh" lang="zgh" translate="no">ⴰⵣⵓⵍ</span>
+          <span class="name-card__script" data-i18n="story.meaningScript">tifinagh · o alfabeto amazigh</span>
+          <span class="name-card__word" id="name-card-word">Azul</span>
+          <div class="name-card__glosses">
+            <p><span class="name-card__lang">Tamazight</span> <span data-i18n="story.meaningA">«olá», a saudação amazigh</span></p>
+            <p><span class="name-card__lang">Português</span> <span data-i18n="story.meaningB">«azul», a cor de Lisboa</span></p>
+          </div>
+        </aside>
       </div>
     </section>
 
@@ -212,12 +217,10 @@
     <section class="section couscous reveal" id="couscous">
       <div class="container couscous-grid">
         <figure class="couscous-media">
-          <!-- TODO PHOTO : LA photo importante du site, le vrai couscous du vendredi,
-               fumant, servi à table. Dimensions recommandées : 1200×900 px. -->
-          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=70"
-               alt="Prato tradicional generoso servido num tacho, com legumes e especiarias"
-               loading="lazy" width="1200" height="900" class="ph-img">
-          <figcaption class="photo-slot" data-i18n="gallery.slotCouscous">Foto temporária, a substituir pelo vosso couscous</figcaption>
+          <!-- Vraie photo fournie par le restaurant : couscous du vendredi. -->
+          <img src="assets/couscous.webp"
+               alt="Couscous com sêmola, legumes cozidos, grão-de-bico e carne, servido num prato tradicional"
+               loading="lazy" width="1536" height="1024" class="ph-img">
         </figure>
         <div class="couscous-text">
           <p class="section-eyebrow couscous-eyebrow" data-i18n="couscous.eyebrow">Só à sexta</p>
@@ -273,35 +276,21 @@
       <div class="container">
         <p class="section-eyebrow" data-i18n="gallery.eyebrow">Galeria</p>
         <h2 data-i18n="gallery.title">Um cheirinho do Azul</h2>
-        <p class="section-intro" data-i18n="gallery.intro">Fotos temporárias de ilustração. Em breve, as verdadeiras imagens da casa.</p>
+        <p class="section-intro" data-i18n="gallery.intro">Alguns dos nossos pratos, tal como saem da cozinha.</p>
 
-        <!-- TODO PHOTO : les 6 tuiles ci-dessous sont des emplacements à remplir par le
-             gérant avec de vraies photos. Dimensions recommandées : 1200×900 px chacune.
-             L'étiquette sur chaque tuile indique la photo attendue. -->
+        <!-- Vraies photos fournies par le restaurant. Légendes exactes par plat. -->
         <div class="gallery-grid">
           <figure class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=900&q=70" alt="Chávena de café com latte art sobre mesa de madeira" loading="lazy" width="900" height="900" class="ph-img">
-            <figcaption class="photo-slot" data-i18n="gallery.slot1">A substituir: o vosso café</figcaption>
+            <img src="assets/crepe-salgado.jpg" alt="Crepe salgado enrolado com frango, cogumelos, fiambre, queijo e salada fresca" loading="lazy" width="660" height="495" class="ph-img">
+            <figcaption class="gallery-caption" data-i18n="gallery.capSavoury">Crepe de frango e cogumelos</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=900&q=70" alt="Mesa de brunch com panquecas, fruta e sumo de laranja" loading="lazy" width="900" height="900" class="ph-img">
-            <figcaption class="photo-slot" data-i18n="gallery.slot2">A substituir: uma mesa de brunch</figcaption>
+            <img src="assets/crepe-doce.webp" alt="Crepes finos com creme de chocolate e avelãs picadas, com doce e açúcar ao lado" loading="lazy" width="600" height="900" class="ph-img">
+            <figcaption class="gallery-caption" data-i18n="gallery.capSweet">Crepe de chocolate e avelã</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=70" alt="Sobremesa doce com chocolate servida em prato pequeno" loading="lazy" width="900" height="900" class="ph-img">
-            <figcaption class="photo-slot" data-i18n="gallery.slot3">A substituir: os doces orientais</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=70" alt="Pratos coloridos e frescos vistos de cima" loading="lazy" width="900" height="900" class="ph-img">
-            <figcaption class="photo-slot" data-i18n="gallery.slot4">A substituir: o couscous de sexta</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=70" alt="Fachada de um café acolhedor com esplanada" loading="lazy" width="900" height="900" class="ph-img">
-            <figcaption class="photo-slot" data-i18n="gallery.slot5">A substituir: a esplanada turquesa</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1555881400-74d7acaacc8b?auto=format&fit=crop&w=900&q=70" alt="Rua típica de Lisboa com elétrico amarelo" loading="lazy" width="900" height="900" class="ph-img">
-            <figcaption class="photo-slot" data-i18n="gallery.slot6">A substituir: o bairro, São Sebastião</figcaption>
+            <img src="assets/cafe.jpg" alt="Chávena de café acabado de tirar, com creme, sobre mesa de madeira" loading="lazy" width="365" height="547" class="ph-img">
+            <figcaption class="gallery-caption" data-i18n="gallery.capCoffee">Café acabado de tirar</figcaption>
           </figure>
         </div>
       </div>

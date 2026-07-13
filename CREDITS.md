@@ -1,27 +1,33 @@
 # Crédits des images
 
-Toutes les photos actuellement affichées sont des **images temporaires d'illustration**
-issues d'[Unsplash](https://unsplash.com), utilisées sous la
-[licence Unsplash](https://unsplash.com/license) (usage libre, attribution appréciée).
-Elles doivent être remplacées par de vraies photos du restaurant avant la mise en ligne
-définitive (voir la check-list du README).
+## Photos du restaurant (fournies par Azul Caffè & Brunch's)
 
-| Emplacement | Fichier / URL (ID Unsplash) | Sujet |
+Ces photos ont été fournies par le restaurant et sont sa propriété. Elles vivent
+dans le dossier `assets/` :
+
+| Fichier | Où | Sujet |
 |---|---|---|
-| Héros (fond) + image de partage OG | `photo-1414235077428-338989a2e8c0` | Table de restaurant, ambiance chaleureuse |
-| Notre histoire | `photo-1521017432531-fbd92d768814` | Intérieur de café convivial |
-| Couscous du vendredi | `photo-1504674900247-0877df9cc836` | Plat mijoté généreux |
-| Galerie 1 | `photo-1541167760496-1628856ab772` | Café latte art |
-| Galerie 2 | `photo-1484723091739-30a097e8f929` | Table de brunch |
-| Galerie 3 | `photo-1551024506-0bccd828d307` | Dessert au chocolat |
-| Galerie 4 | `photo-1512621776951-a57141f2eefd` | Plats colorés vus de dessus |
-| Galerie 5 | `photo-1554118811-1e0d58224f24` | Devanture de café |
-| Galerie 6 | `photo-1555881400-74d7acaacc8b` | Rue de Lisbonne, tramway |
+| `assets/couscous.webp` | Section « Couscous de sexta » | Le couscous du vendredi (semoule, légumes, pois chiches, viande) |
+| `assets/crepe-salgado.jpg` | Galerie | Crêpe salée poulet, champignons, fromage et salade |
+| `assets/crepe-doce.webp` | Galerie | Crêpes au chocolat et noisettes |
+| `assets/cafe.jpg` | Galerie | Café servi, sur table en bois |
 
-Les URL complètes sont de la forme :
-`https://images.unsplash.com/<ID>?auto=format&fit=crop&w=<largeur>&q=70`
+## Habillage temporaire restant (Unsplash)
 
-Créations originales (aucune attribution nécessaire) :
+Un seul visuel d'illustration reste temporaire : l'**image de fond du héros** et
+l'**image de partage** (Open Graph / Twitter), toujours issues d'[Unsplash](https://unsplash.com)
+sous [licence Unsplash](https://unsplash.com/license) :
+
+| Emplacement | ID Unsplash | Sujet |
+|---|---|---|
+| Fond du héros + image de partage | `photo-1414235077428-338989a2e8c0` | Table de restaurant, ambiance |
+
+À remplacer par une vraie photo d'ambiance du restaurant (voir la check-list du README).
+
+## Créations originales (aucune attribution nécessaire)
+
 - `assets/favicon.svg` — favicon étoile à huit branches, créé pour le site.
 - `assets/placeholder.svg` — visuel de secours aux couleurs de la marque.
-- Motif zellige (data-URI dans `styles.css`) et toutes les icônes SVG inline — créés pour le site.
+- Motif zellige (data-URI dans `styles.css`) et toutes les icônes SVG inline.
+- Le mot « Azul » en tifinagh (ⴰⵣⵓⵍ) est rendu avec la police **Noto Sans Tifinagh**
+  (Google Fonts, licence SIL Open Font License).

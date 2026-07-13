@@ -86,8 +86,8 @@ dans le `<head>` de `index.html` (balises `canonical`, `og:url`, et le JSON-LD).
 ## ✅ Check-list avant mise en ligne
 
 - [ ] **Vérifier tous les prix** dans `script.js` (objet `MENU`).
-- [ ] Remplacer les **8 photos temporaires** (héros, histoire, couscous, 6 tuiles galerie) — cherchez `TODO PHOTO`.
-- [ ] Supprimer les étiquettes « à remplacer » (`photo-slot`) une fois les vraies photos en place.
+- [x] Photos réelles intégrées : couscous (section), crêpe salée, crêpe sucrée et café (galerie), dans `assets/`.
+- [ ] Remplacer la **dernière image temporaire** : le fond du héros et l'image de partage (`TODO PHOTO`, une seule photo d'ambiance 1920×1280 px).
 - [ ] Renseigner le **numéro de téléphone** (`tel:`) — cherchez `TODO CONTACT`.
 - [ ] Renseigner le **numéro WhatsApp** (2 liens `wa.me`).
 - [ ] Renseigner le **lien Instagram** (2 endroits).
