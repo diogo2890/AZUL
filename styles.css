@@ -533,61 +533,39 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 8px); }
 }
 .name-card__tifinagh {
   font-family: "Noto Sans Tifinagh", var(--font-display), serif;
-  font-size: clamp(2.3rem, 7vw, 3.1rem);
+  font-size: clamp(2.7rem, 8vw, 3.7rem);
   line-height: 1;
   color: var(--gold);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
 }
-.name-card__script {
-  margin-top: 0.7rem;
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(251, 248, 243, 0.5);
-}
-.name-card__word {
-  position: relative;
-  margin-top: 1.4rem;
-  padding-top: 1.2rem;
-  font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 600;
-  color: #fff;
-}
-.name-card__word::before { /* fine règle dorée */
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 2px;
-  background: var(--gold-grad);
-  border-radius: 2px;
-}
-.name-card__glosses {
-  margin-top: 1rem;
+/* Yaz (ⵣ), symbole amazigh, en séparateur bordé de deux fins filets dorés */
+.name-card__symbol {
   display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-}
-.name-card__glosses p {
-  margin: 0;
-  display: flex;
-  gap: 0.6rem;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
-  font-size: 0.92rem;
-  color: rgba(251, 248, 243, 0.82);
-}
-.name-card__lang {
-  min-width: 6.4em;
-  text-align: right;
-  font-size: 0.68rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  gap: 0.9rem;
+  margin: 1.5rem 0;
   color: var(--gold);
+}
+.name-card__symbol span {
+  font-family: "Noto Sans Tifinagh", var(--font-display), serif;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+.name-card__symbol::before,
+.name-card__symbol::after {
+  content: "";
+  width: 42px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dk));
+}
+.name-card__symbol::after { transform: scaleX(-1); }
+.name-card__word {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
   font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
 }
 
 .couscous-media img {

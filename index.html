@@ -198,14 +198,11 @@
 
         <!-- Carte du nom : remplace un cadre photo sans intérêt par un objet
              typographique authentique (le double sens de « Azul », en tifinagh). -->
-        <aside class="name-card" aria-labelledby="name-card-word">
+        <aside class="name-card" aria-label="Azul">
           <span class="name-card__tifinagh" lang="zgh" translate="no">ⴰⵣⵓⵍ</span>
-          <span class="name-card__script" data-i18n="story.meaningScript">tifinagh · o alfabeto amazigh</span>
-          <span class="name-card__word" id="name-card-word">Azul</span>
-          <div class="name-card__glosses">
-            <p><span class="name-card__lang">Tamazight</span> <span data-i18n="story.meaningA">«olá», a saudação amazigh</span></p>
-            <p><span class="name-card__lang">Português</span> <span data-i18n="story.meaningB">«azul», a cor de Lisboa</span></p>
-          </div>
+          <!-- Séparateur : le yaz (ⵣ), symbole amazigh, aussi le « z » de Azul -->
+          <span class="name-card__symbol" aria-hidden="true"><span lang="zgh" translate="no">ⵣ</span></span>
+          <span class="name-card__word">Azul</span>
         </aside>
       </div>
     </section>

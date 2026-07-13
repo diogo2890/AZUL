@@ -46,9 +46,6 @@
       "story.p2": "Trouxemos connosco a cozinha com que crescemos, a da Argélia e das montanhas amazighes: o couscous que junta a família à sexta, os doces de mel e amêndoa, o pão amassado de manhã. Nada sai da nossa cozinha que não faríamos para os nossos.",
       "story.p3": "Lisboa recebeu-nos como se recebe em casa. É uma cidade de encontro, de luz atlântica e de gente de toda a parte, e por isso fez sentido abrir aqui, no Bairro Azul, uma mesa onde duas culturas se sentam lado a lado.",
       "story.p4": "O Azul não é só um restaurante. É um sítio onde se diz «olá» em duas línguas e onde ninguém almoça sozinho.",
-      "story.meaningScript": "tifinagh · o alfabeto amazigh",
-      "story.meaningA": "«olá», a saudação amazigh",
-      "story.meaningB": "«azul», a cor de Lisboa",
 
       "couscous.eyebrow": "Só à sexta",
       "couscous.title": "O ritual do couscous de sexta",
@@ -138,9 +135,6 @@
       "story.p2": "We brought the cooking we grew up on, from Algeria and the Amazigh mountains: the couscous that gathers the family on Fridays, the honey-and-almond pastries, the bread kneaded each morning. Nothing leaves our kitchen that we wouldn't make for our own.",
       "story.p3": "Lisbon took us in the way you welcome someone into your home. It's a city of meeting, of Atlantic light and people from everywhere, so it made sense to open here, in Bairro Azul, a table where two cultures sit side by side.",
       "story.p4": "Azul isn't just a restaurant. It's a place where «hello» is said in two languages, and where no one eats alone.",
-      "story.meaningScript": "tifinagh · the Amazigh alphabet",
-      "story.meaningA": "«hello», the Amazigh greeting",
-      "story.meaningB": "«blue», the colour of Lisbon",
 
       "couscous.eyebrow": "Fridays only",
       "couscous.title": "The Friday couscous ritual",
@@ -230,9 +224,6 @@
       "story.p2": "Nous avons apporté la cuisine avec laquelle nous avons grandi, celle d'Algérie et des montagnes amazighes : le couscous qui réunit la famille le vendredi, les gâteaux au miel et à l'amande, le pain pétri le matin. Rien ne sort de notre cuisine que nous ne ferions pour les nôtres.",
       "story.p3": "Lisbonne nous a accueillis comme on accueille chez soi. C'est une ville de rencontre, de lumière atlantique et de gens venus de partout ; il était donc naturel d'ouvrir ici, dans le Bairro Azul, une table où deux cultures s'assoient côte à côte.",
       "story.p4": "Azul n'est pas qu'un restaurant. C'est un endroit où l'on dit «bonjour» en deux langues, et où personne ne déjeune seul.",
-      "story.meaningScript": "tifinagh · l'alphabet amazigh",
-      "story.meaningA": "«bonjour», la salutation amazighe",
-      "story.meaningB": "«bleu», la couleur de Lisbonne",
 
       "couscous.eyebrow": "Uniquement le vendredi",
       "couscous.title": "Le rituel du couscous du vendredi",
