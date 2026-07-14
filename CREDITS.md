@@ -26,7 +26,7 @@ sous [licence Unsplash](https://unsplash.com/license) :
 
 ## Créations originales (aucune attribution nécessaire)
 
-- `assets/favicon.svg` — favicon étoile à huit branches, créé pour le site.
+- `assets/favicon.svg` — sceau circulaire avec monogramme « A », créé pour le site (identique au logo de la barre de navigation).
 - `assets/placeholder.svg` — visuel de secours aux couleurs de la marque.
 - Motif zellige (data-URI dans `styles.css`) et toutes les icônes SVG inline.
 - Le mot « Azul » en tifinagh (ⴰⵣⵓⵍ) est rendu avec la police **Noto Sans Tifinagh**
