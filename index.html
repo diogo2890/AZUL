@@ -93,14 +93,27 @@
   <header class="nav" id="top">
     <div class="nav-inner">
       <a href="#top" class="brand" aria-label="Azul Caffè &amp; Brunch's, voltar ao topo">
-        <!-- Monogramme : étoile à huit branches, clin d'œil au zellige -->
+        <!-- Monogramme : le yaz (ⵣ), symbole amazigh de l'homme libre, en badge doré -->
         <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <rect width="64" height="64" rx="14" fill="#0F2E42"/>
-          <g fill="none" stroke="#D9B26A" stroke-width="3">
-            <rect x="18" y="18" width="28" height="28"/>
-            <rect x="18" y="18" width="28" height="28" transform="rotate(45 32 32)"/>
+          <defs>
+            <linearGradient id="bmB" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="64">
+              <stop offset="0" stop-color="#123A52"/>
+              <stop offset="1" stop-color="#0A2230"/>
+            </linearGradient>
+            <linearGradient id="bmG" gradientUnits="userSpaceOnUse" x1="16" y1="12" x2="48" y2="55">
+              <stop offset="0" stop-color="#E8C888"/>
+              <stop offset="0.55" stop-color="#D9B26A"/>
+              <stop offset="1" stop-color="#B8934A"/>
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="15" fill="url(#bmB)"/>
+          <rect x="4" y="4" width="56" height="56" rx="12" fill="none" stroke="#D9B26A" stroke-opacity="0.32" stroke-width="1.4"/>
+          <circle cx="32" cy="14" r="3.6" fill="url(#bmG)"/>
+          <g fill="none" stroke="url(#bmG)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M32 19.5 L32 48"/>
+            <path d="M19.5 27.5 L44.5 27.5"/>
+            <path d="M25.5 54.5 L32 48 L38.5 54.5"/>
           </g>
-          <circle cx="32" cy="32" r="5" fill="#C46B4A"/>
         </svg>
         <span class="brand-name">Azul <em>Caffè &amp; Brunch's</em></span>
       </a>
@@ -189,7 +202,7 @@
       <div class="container story-grid">
         <div class="story-text">
           <p class="section-eyebrow" data-i18n="story.eyebrow">A nossa história</p>
-          <h2 data-i18n="story.title">Azul quer dizer olá</h2>
+          <h2 data-i18n="story.title">Do Atlas ao Atlântico</h2>
           <p data-i18n="story.p1">Na nossa língua materna, o tamazight dos berberes, «azul» é a primeira palavra que se diz a quem chega: olá, entra, senta-te. Em português, «azul» é a cor do céu de Lisboa e dos azulejos que forram a cidade. Foi essa ponte que quisemos dar de nome à casa.</p>
           <p data-i18n="story.p2">Trouxemos connosco a cozinha com que crescemos, a da Argélia e das montanhas amazighes: o couscous que junta a família à sexta, os doces de mel e amêndoa, o pão amassado de manhã. Nada sai da nossa cozinha que não faríamos para os nossos.</p>
           <p data-i18n="story.p3">Lisboa recebeu-nos como se recebe em casa. É uma cidade de encontro, de luz atlântica e de gente de toda a parte, e por isso fez sentido abrir aqui, no Bairro Azul, uma mesa onde duas culturas se sentam lado a lado.</p>

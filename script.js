@@ -41,7 +41,7 @@
       "quick.reviews": "31 avaliações",
 
       "story.eyebrow": "A nossa história",
-      "story.title": "Azul quer dizer olá",
+      "story.title": "Do Atlas ao Atlântico",
       "story.p1": "Na nossa língua materna, o tamazight dos berberes, «azul» é a primeira palavra que se diz a quem chega: olá, entra, senta-te. Em português, «azul» é a cor do céu de Lisboa e dos azulejos que forram a cidade. Foi essa ponte que quisemos dar de nome à casa.",
       "story.p2": "Trouxemos connosco a cozinha com que crescemos, a da Argélia e das montanhas amazighes: o couscous que junta a família à sexta, os doces de mel e amêndoa, o pão amassado de manhã. Nada sai da nossa cozinha que não faríamos para os nossos.",
       "story.p3": "Lisboa recebeu-nos como se recebe em casa. É uma cidade de encontro, de luz atlântica e de gente de toda a parte, e por isso fez sentido abrir aqui, no Bairro Azul, uma mesa onde duas culturas se sentam lado a lado.",
@@ -130,7 +130,7 @@
       "quick.reviews": "31 reviews",
 
       "story.eyebrow": "Our story",
-      "story.title": "Azul means hello",
+      "story.title": "From the Atlas to the Atlantic",
       "story.p1": "In our mother tongue, the Amazigh Tamazight of the Berbers, «azul» is the first word you say to anyone who arrives: hello, come in, sit down. In Portuguese, «azul» is the colour of the Lisbon sky and of the tiles that dress the city. That bridge is the name we gave the place.",
       "story.p2": "We brought the cooking we grew up on, from Algeria and the Amazigh mountains: the couscous that gathers the family on Fridays, the honey-and-almond pastries, the bread kneaded each morning. Nothing leaves our kitchen that we wouldn't make for our own.",
       "story.p3": "Lisbon took us in the way you welcome someone into your home. It's a city of meeting, of Atlantic light and people from everywhere, so it made sense to open here, in Bairro Azul, a table where two cultures sit side by side.",
@@ -219,7 +219,7 @@
       "quick.reviews": "31 avis",
 
       "story.eyebrow": "Notre histoire",
-      "story.title": "Azul veut dire bonjour",
+      "story.title": "De l'Atlas à l'Atlantique",
       "story.p1": "Dans notre langue maternelle, le tamazight des Berbères, «azul» est le premier mot que l'on adresse à celui qui arrive : bonjour, entre, assieds-toi. En portugais, «azul», c'est la couleur du ciel de Lisbonne et des azulejos qui habillent la ville. C'est ce pont que nous avons voulu donner pour nom à la maison.",
       "story.p2": "Nous avons apporté la cuisine avec laquelle nous avons grandi, celle d'Algérie et des montagnes amazighes : le couscous qui réunit la famille le vendredi, les gâteaux au miel et à l'amande, le pain pétri le matin. Rien ne sort de notre cuisine que nous ne ferions pour les nôtres.",
       "story.p3": "Lisbonne nous a accueillis comme on accueille chez soi. C'est une ville de rencontre, de lumière atlantique et de gens venus de partout ; il était donc naturel d'ouvrir ici, dans le Bairro Azul, une table où deux cultures s'assoient côte à côte.",
