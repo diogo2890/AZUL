@@ -224,8 +224,8 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 8px); }
   min-width: 0;
 }
 .brand-emblem {
-  width: 42px; height: 42px; flex: none;
-  filter: drop-shadow(0 4px 10px rgba(15, 46, 66, 0.35));
+  height: 42px; width: auto; flex: none;
+  display: block;
 }
 /* Lockup : nom en Fraunces + descripteur en petites capitales espacées */
 .brand-word {
@@ -960,14 +960,13 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 8px); }
   gap: 1.8rem;
   padding-bottom: 2.2rem;
 }
-.footer-name {
-  font-family: var(--font-display);
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 0.35rem;
+.footer-logo {
+  width: 108px;
+  height: 108px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
 }
-.footer-name em { font-style: normal; color: var(--gold); }
 .footer-tagline { font-size: 0.92rem; color: rgba(251, 248, 243, 0.62); }
 .footer-col h3 {
   color: var(--gold);

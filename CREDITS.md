@@ -1,5 +1,16 @@
 # Crédits des images
 
+## Logo officiel (fourni par Azul Caffè & Brunch's)
+
+Le logo est la propriété du restaurant. Les fichiers ont été extraits et détourés
+proprement à partir de l'image fournie :
+
+| Fichier | Où | Description |
+|---|---|---|
+| `assets/logo.png` | Pied de page, apple-touch-icon | Logo officiel complet, détouré en cercle (fond transparent) |
+| `assets/emblem.png` | Logo de la barre de navigation | Emblème seul (spirale terracotta), fond transparent |
+| `assets/favicon.png` | Icône d'onglet | Logo officiel complet, 96×96 px |
+
 ## Photos du restaurant (fournies par Azul Caffè & Brunch's)
 
 Ces photos ont été fournies par le restaurant et sont sa propriété. Elles vivent
@@ -26,7 +37,6 @@ sous [licence Unsplash](https://unsplash.com/license) :
 
 ## Créations originales (aucune attribution nécessaire)
 
-- `assets/favicon.svg` — sceau circulaire avec monogramme « A », créé pour le site (identique au logo de la barre de navigation).
 - `assets/placeholder.svg` — visuel de secours aux couleurs de la marque.
 - Motif zellige (data-URI dans `styles.css`) et toutes les icônes SVG inline.
 - Le mot « Azul » en tifinagh (ⴰⵣⵓⵍ) est rendu avec la police **Noto Sans Tifinagh**
